@@ -4,10 +4,7 @@ interface max{
 public class Lambda {
     public static void main(String[] args) {
     
-        max object1= (int num1, int num2)->{
-            int n=(num1>num2) ? num1: num2;
-            return n;
-        };
+        max object1= ( num1, num2)->(num1>num2) ? num1: num2;
         
         System.out.println("the greatest Number among 12 and 13 is: "+object1.Maximum(12,13));
         
